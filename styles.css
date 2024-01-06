@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('backg.gif'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+  /*  background-position: center;  Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
 }
 
 .container {
