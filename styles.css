@@ -25,7 +25,7 @@ body {
 }
 
 .profile-picture {
-    background-image: url('profile-picture.jpg');
+    background-image: url('https://azizbeniych.s3.amazonaws.com/IMG_20240123_145419.jpg');
     background-size: cover;
     background-position: center;
     width: 100px;
