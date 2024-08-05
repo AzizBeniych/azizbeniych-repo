@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>WordPress website building</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/faviconaz.png" rel="icon">
+  <link href="assets/img/apple-touch-iconaz.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="/index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="https://www.linkedin.com/in/aziz-beniych-b78475239/"><i class="bi bi-linkedin"></i><span>Linkedin</span></a></li>
+        <li><a href="https://github.com/AzizBeniych"><i class="bi bi-github"></i><span>Github</span></a></li>
+        <li><a href="https://x.com/azizbeniych"><i class="bi bi-twitter-x"></i><span>X.com</span></a></li>
+        <li><a href="https://web.facebook.com/azizbeniych"><i class="bi bi-facebook"></i><span>Facebook</span></a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title 
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+        <h1>Portfolio Details</h1>
+      </div>
+    </div>End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <div class="swiper-slide">
+              <img src="assets\img\masonry-portfolio\mw (1).png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets\img\masonry-portfolio\mw (2).png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets\img\masonry-portfolio\mw (5).png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets\img\masonry-portfolio\mw (6).png" alt="">
+            </div>
+
+            
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Sylius E-Commerce Setup on AWS with Aurora DB</h2>
+              <p>
+                <b>Objective:</b>
+                <br>The goal of this project was to deploy a fully functional Sylius e-commerce platform on AWS, ensuring scalability, security, and high performance. This included integrating a custom theme to match the client's branding and optimizing the environment for a responsive user experience.
+
+
+                
+                <br><br><b>Project Overview:</b>
+                <br>This deployment involved setting up a Sylius e-commerce platform on an AWS EC2 instance, paired with an Amazon Aurora MySQL database for enhanced performance and reliability. The project focused on creating a scalable infrastructure that can efficiently handle increased traffic and transactions as the client’s business grows.
+                <br>
+                <br><b>Key Features Implemented:</b>
+                
+                <br>EC2 Instance Configuration: Customized and optimized an AWS EC2 instance specifically for running Sylius, ensuring fast load times and responsive interactions.
+                <br>Aurora MySQL Integration: Configured a high-performance Amazon Aurora MySQL database to support complex transactions and provide scalability.
+                <br>Custom Theme Development: Designed and integrated a custom theme that aligns with the client’s brand aesthetics while enhancing the shopper's experience.
+                <br>Performance Optimization: Employed caching mechanisms and fine-tuned the server settings to optimize the e-commerce site’s performance.
+               
+                <br><br><b>Challenges and Solutions:</b>
+                <br>Database Scalability: Implemented Amazon Aurora MySQL, known for its scalability and reliability, to handle fluctuating traffic without compromising performance.
+                <br>Security Implementation: Applied rigorous security measures including network firewalls, encryption, and secure access protocols to protect sensitive customer data and transaction details.
+                <br>User Experience Optimization: Ensured the site was responsive and user-friendly across all devices by implementing adaptive design principles and testing across multiple platforms.
+                
+                <br><br><b>Outcome:</b>
+                <br>The deployment was successful, resulting in a robust, secure, and visually appealing e-commerce platform that fully aligns with the client’s operational and branding needs. The platform has been rigorously tested and is equipped to handle a high volume of transactions and site visitors, ensuring a smooth operational transition to online sales.
+
+
+              </p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong> Web Development & AWS Cloud</li>
+                <li><strong>Project duration</strong>1-7 days</li>
+                <li><strong>Project date</strong> June 2024</li>
+                <li><a href="/index.html" class="btn-visit align-self-start">Back Home</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">AZIZ BENIYCH</h3>
+      <p>Empowering your digital journey with professional AWS and Web Development solutions.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/azizbeniych"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://web.facebook.com/azizbeniych"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com.com/azizbeniych"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/AzizBeniych"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/aziz-beniych-b78475239/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Aziz Beniych</strong> <span>All Rights Reserved</span>
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
