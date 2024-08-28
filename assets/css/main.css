@@ -170,7 +170,7 @@ h6 {
   }
 
   .header~main .hero {
-    margin-left: -177px;
+    margin-left: -180px;
     width: 100vw;
   }
 }
@@ -255,6 +255,9 @@ h6 {
   .navmenu a:focus span {
     display: none;
   }
+  .info-item {
+    margin-bottom: 0;
+}
 }
 
 .navmenu a:hover,
@@ -413,6 +416,13 @@ h6 {
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
   }
 }
 
@@ -581,15 +591,7 @@ section,
   color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
 
-  .hero p {
-    font-size: 20px;
-  }
-}
 
 /*--------------------------------------------------------------
 # About Section
@@ -799,6 +801,10 @@ section,
     font-size: 14px;
     margin: 0 0 10px 0;
   }
+  .portfolio-details .swiper-button-prev,
+  .portfolio-details .swiper-button-next {
+    display: none;
+  }
 }
 
 .portfolio .portfolio-item {
@@ -1003,6 +1009,7 @@ section,
   border-radius: 50%;
   border: 4px solid var(--background-color);
   margin: 0 auto;
+  max-width: 46%;
 }
 
 .testimonials .testimonial-item h3 {
@@ -1183,13 +1190,8 @@ section,
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 575px) {
 
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
-    display: none;
-  }
-}
+
 
 .portfolio-details .swiper-pagination {
   margin-top: 20px;
@@ -1460,4 +1462,129 @@ section,
 #tomreview{
   /* Add your styles here */
   font-size: 18px;
+}
+@keyframes float {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 44px;
+  bottom: 81px;
+  right: 13px;
+ /*  background-color: rgba(255, 255, 255, 0.15);*/
+  color: #25d366;
+  border-radius: 2%;
+  text-align: center;
+  font-size: 36px;
+  /* box-shadow: 2px 2px 3px #999; */
+  z-index: 100;
+  animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-float i {
+    margin-top: 16px;
+
+}
+.carousel-control-next {
+  margin-right: -6px; /* Adjust positioning to align with design */
+}
+
+
+.carousel-control-prev {
+  margin-left: -18px; /* Adjust positioning to align with design */
+}
+/* Hide the mobile slider by default on larger screens */
+.certificatesmobile.section {
+  display: none;
+}
+#navmenumob {
+  display: none;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  /* Hide the desktop slider on mobile devices */
+  .certificatesdes.section {
+    display: none;
+}
+  /* Show the mobile slider on mobile devices */
+  .certificatesmobile.section {
+      display: block;
+  }
+  .whatsapp-float {
+    right: 10px;
+    bottom: 60px;
+}
+
+#aziz2img {
+margin-left: 80px;
+border-radius: 30px;
+max-width: 50%;
+}
+.carousel-control-prev {
+  margin-left: 4px;
+}
+.carousel-control-next {
+  margin-right: 4px;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 50px;
+  height: 51px;
+  background-color: #007bff57;
+  margin-top: 110px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Initially show only the first three projects */
+
+
+/* Show the "See more" button */
+#seeMoreProjects {
+  display: inline-block;
+}
+
+/* Show the additional projects when the button is clicked (JavaScript will handle this) */
+.isotope-container.show-more .portfolio-item {
+  display: block;
+}
+#navmenumob {
+  display: block;
+}
+#navmenu {
+  display: none;
+}
+#stats .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#stats .col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+#stats .stats-item {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+#hero .container {
+  padding: 0 15px; /* Adjust padding to create space */
+}
+
+#hero img {
+  width: 100%;
+  object-position: 83% center; /* Move image position horizontally */
+}
 }

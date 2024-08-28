@@ -16,7 +16,8 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -47,11 +48,26 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-briefcase"></i><span id="latestproj">Latest Projects</span></a></li>
+        <li><a href="#certificates"><i class="bi bi-award navicon"></i><span>Certificates</span></a></li>
+        <li><a href="#certificatesCarousel"><i class="bi bi-briefcase"></i><span id="latestproj">Latest Projects</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
+
+    <nav id="navmenumob" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#certificatesmobile"><i class="bi bi-award navicon"></i><span>Certificates</span></a></li>
+        <li><a href="#certificatesCarousel"><i class="bi bi-briefcase"></i><span id="latestproj">Latest Projects</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+
 <style>
 #latestproj {
     white-space: nowrap; /* This prevents the text from wrapping */
@@ -97,7 +113,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/aziz2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/aziz2.jpg" class="img-fluid" alt="" id="aziz2img">
           </div>
           <div class="col-lg-8 content">
             <h2>AWS Expert &amp; Web Developer</h2>
@@ -418,6 +434,304 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
+
+
+
+
+
+
+
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+      <style>
+          .carousel-caption {
+              position: static;
+              background: rgba(255, 255, 255, 0.9);
+              padding: 10px;
+              margin-top: 5px;
+              color: #333;
+              text-align: center;
+          }
+          .carousel-item img {
+              border-radius: 5px;
+              box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          }
+      </style>
+
+  <section id="certificates" class="certificatesdes section">
+      <div class="container section-title" data-aos="fade-up">
+          <h2>Certificates</h2>
+          <p>Explore the professional certifications showcasing my expertise and dedication across various domains.</p>
+      </div>
+  
+      <div class="container">
+          <div id="certificatesCarousel" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-bs-target="#certificatesCarousel" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#certificatesCarousel" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#certificatesCarousel" data-bs-slide-to="2"></li>
+                  <li data-bs-target="#certificatesCarousel" data-bs-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <a href="assets/img/asaws.jpg" data-lightbox="certificate-gallery" data-title="AWS Cloud Practitioner - Amazon Web Services & Coursera - 2024">
+                                  <img src="assets/img/asaws.jpg" alt="AWS Cloud Practitioner Certificate" class="d-block w-100">
+                              </a>
+                              <div class="carousel-caption">
+                                  <h3 id="certitle">Architecting Solutions on AWS</h3>
+                                  <p id="cerdesc">Amazon Web Services & Coursera - 2024</p>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <a href="assets/img/solicodec.jpg" data-lightbox="certificate-gallery" data-title="Web Developer - Centre Solidaire Digital de Tanger - 2022">
+                                  <img src="assets/img/solicodec.jpg" alt="Web Developer Certificate" class="d-block w-100">
+                              </a>
+                              <div class="carousel-caption">
+                                  <h3 id="certitle">Web Developer</h3>
+                                  <p id="cerdesc">Centre Solidaire Digital de Tanger - 2022</p>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <a href="assets/img/ofpptc.jpg" data-lightbox="certificate-gallery" data-title="Web Developer - APPLIED TECHNOLOGY INSTITUTE TANGIER - 2022">
+                                  <img src="assets/img/ofpptc.jpg" alt="Web Developer Certificate" class="d-block w-100">
+                              </a>
+                              <div class="carousel-caption">
+                                  <h3 id="certitle">Web Developer - Mode Bootcamp</h3>
+                                  <p id="cerdesc">Applied Technology Institute Tangier - 2022</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <a href="assets/img/awsce.jpg" data-lightbox="certificate-gallery" data-title="Amazon Web Services & Coursera - 2024">
+                                  <img src="assets/img/awsce.jpg" alt="AWS Cloud Technical Essentials" class="d-block w-100">
+                              </a>
+                              <div class="carousel-caption">
+                                  <h3 id="certitle">AWS Cloud Technical Essentials</h3>
+                                  <p id="cerdesc">Amazon Web Services & Coursera - 2024</p>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <a href="assets/img/bac20.jpg" data-lightbox="certificate-gallery" data-title="Baccalaureate economic science - 2023">
+                                  <img src="assets/img/bac20.jpg" alt="Master JavaScript Certificate" class="d-block w-100">
+                              </a>
+                              <div class="carousel-caption">
+                                  <h3 id="certitle">Baccalaureate</h3>
+                                  <p id="cerdesc">Rehabilitation Secondary Beer Anzran Tangier - 2020</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#certificatesCarousel" role="button" data-bs-slide="prev">
+                  <span aria-hidden="true" style="font-size: 24px;">&#8592;</span>
+                  <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#certificatesCarousel" role="button" data-bs-slide="next">
+                  <span aria-hidden="true" style="font-size: 24px;">&#8594;</span>
+                  <span class="visually-hidden">Next</span>
+              </a>
+          </div>
+      </div>
+  </section>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+
+
+
+
+<!-- ________________________________________________________________________________________________________ -->
+ 
+<section id="certificatesmobile" class="certificatesmobile section">
+  <div class="container section-title" data-aos="fade-up">
+      <h2>Certificates</h2>
+      <p>Explore the professional certifications showcasing my expertise and dedication across various domains.</p>
+  </div>
+
+
+
+  <!-- Mobile Version -->
+  <div class="container mobile-slider">
+    <div id="certificatesMobileCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#certificatesMobileCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#certificatesMobileCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#certificatesMobileCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#certificatesMobileCarousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#certificatesMobileCarousel" data-bs-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="assets/img/asaws.jpg" data-lightbox="certificate-gallery" data-title="AWS Cloud Practitioner - Amazon Web Services & Coursera - 2024">
+                            <img src="assets/img/asaws.jpg" alt="AWS Cloud Practitioner Certificate" class="d-block w-100">
+                        </a>
+                        <div class="carousel-caption">
+                            <h3 id="certitle">Architecting Solutions on AWS</h3>
+                            <p id="cerdesc">Amazon Web Services & Coursera - 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="assets/img/solicodec.jpg" data-lightbox="certificate-gallery" data-title="Web Developer - Centre Solidaire Digital de Tanger - 2022">
+                            <img src="assets/img/solicodec.jpg" alt="Web Developer Certificate" class="d-block w-100">
+                        </a>
+                        <div class="carousel-caption">
+                            <h3 id="certitle">Web Developer</h3>
+                            <p id="cerdesc">Centre Solidaire Digital de Tanger - 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="assets/img/ofpptc.jpg" data-lightbox="certificate-gallery" data-title="Web Developer - APPLIED TECHNOLOGY INSTITUTE TANGIER - 2022">
+                            <img src="assets/img/ofpptc.jpg" alt="Web Developer Certificate" class="d-block w-100">
+                        </a>
+                        <div class="carousel-caption">
+                            <h3 id="certitle">Web Developer - Mode Bootcamp</h3>
+                            <p id="cerdesc">Applied Technology Institute Tangier - 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="assets/img/awsce.jpg" data-lightbox="certificate-gallery" data-title="Amazon Web Services & Coursera - 2024">
+                            <img src="assets/img/awsce.jpg" alt="AWS Cloud Technical Essentials" class="d-block w-100">
+                        </a>
+                        <div class="carousel-caption">
+                            <h3 id="certitle">AWS Cloud Technical Essentials</h3>
+                            <p id="cerdesc">Amazon Web Services & Coursera - 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="assets/img/bac20.jpg" data-lightbox="certificate-gallery" data-title="Baccalaureate economic science - 2023">
+                            <img src="assets/img/bac20.jpg" alt="Master JavaScript Certificate" class="d-block w-100">
+                        </a>
+                        <div class="carousel-caption">
+                            <h3 id="certitle">Baccalaureate</h3>
+                            <p id="cerdesc">Rehabilitation Secondary Beer Anzran Tangier - 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#certificatesMobileCarousel" role="button" data-bs-slide="prev">
+            <span aria-hidden="true" style="font-size: 24px;">&#8592;</span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#certificatesMobileCarousel" role="button" data-bs-slide="next">
+            <span aria-hidden="true" style="font-size: 24px;">&#8594;</span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  .carousel-caption {
+    position: static;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent white background to the text for better readability */
+    border-radius: 5px;
+    margin-top: 10px; /* Adds space between the image and the text */
+}
+
+.carousel-item {
+    text-align: center; /* Centers the text below the images */
+}
+
+.carousel-item img {
+    margin-bottom: 10px; /* Adds space between the image and the caption */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100%, 100%;
+    background-image: none; /* Remove the default arrows */
+}
+
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
+
+.carousel-control-prev span, .carousel-control-next span {
+    font-size: 30px;
+    font-weight: bold;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 50px;
+    height: 51px;
+    background-color: #007bff;
+    margin-top: 110px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-indicators {
+    display: none;
+}
+#certitle {
+  font-size: 20px;
+}
+#cerdesc{
+  font-size: 14px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Latest Projects</h2>
@@ -427,16 +741,16 @@
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
+      
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">AWS Cloud Solutions</li>
             <li data-filter=".filter-product">Web Development</li>
           <!--  <li data-filter=".filter-branding">Web</li>-->
           </ul><!-- End Portfolio Filters -->
-
+      
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/Architectural-design.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -446,7 +760,7 @@
                 <a href="AWS-Setup-for-Productivity-App.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/AI-Driven.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -456,7 +770,7 @@
                 <a href="AI-Driven.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets\img\masonry-portfolio\ec2setup.png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -466,7 +780,7 @@
                 <a href="ec2setup.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets\img\masonry-portfolio\edsaf (2).jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -476,8 +790,8 @@
                 <a href="Server-Review.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
-
+      
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets\img\masonry-portfolio\k (3).jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -487,17 +801,7 @@
                 <a href="Converting-HTML-to-WordPress.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div> End Portfolio Item -->
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets\img\masonry-portfolio\jrtaxi (3).png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -507,7 +811,7 @@
                 <a href="Jamaica-Taxi-AWS-to-Digital-Ocean-Migration.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets\img\masonry-portfolio\mw (1).png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -517,7 +821,7 @@
                 <a href="build-wordpress-website.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets\img\masonry-portfolio\sy (1).jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -527,7 +831,7 @@
                 <a href="Sylius-E-Commerce-Setup.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets\img\masonry-portfolio\seo (1).webp" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -537,18 +841,8 @@
                 <a href="Website-Optimization-SEO.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
-
-          <!--  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div> End Portfolio Item -->
-
+      
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets\img\masonry-portfolio\iotdiagram (1).jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -558,7 +852,7 @@
                 <a href="AWS-IoT-System-Design.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/noah (2).png" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -568,26 +862,37 @@
                 <a href="Online-music-subscription-web-app.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
-            
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div> End Portfolio Item -->
-
+      
+      
+      
           </div><!-- End Portfolio Container -->
-
+      
         </div>
-
+      
       </div>
+      
+      </section><!-- /Portfolio Section -->
 
-    </section><!-- /Portfolio Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -924,38 +1229,45 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade" data-aos-delay="100">
-
         <div class="row gy-4">
+            <div class="col-lg-4 col-12">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Tangier, Morocco, 90000</p>
+                    </div>
+                </div><!-- End Info Item -->
+            </div>
+    
+            <div class="col-lg-4 col-12">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Call Me</h3>
+                        <p>+212 689 79 65 84</p>
+                    </div>
+                </div><!-- End Info Item -->
+            </div>
+    
+            <div class="col-lg-4 col-12">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                        <h3>Email Me</h3>
+                        <p>azizbeniych@yahoo.com</p>
+                    </div>
+                </div><!-- End Info Item -->
+            </div>
+        </div>
+    </div>
+    <style>
+      /* Additional custom CSS (if needed) */
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Tangier, Morocco, 90000</p>
-              </div>
-            </div><!-- End Info Item -->
+    </style>
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Me</h3>
-                <p>+212 689 79 65 84</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Me</h3>
-                <p>azizbeniych@yahoo.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200" id="">
+       <!--    <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -983,7 +1295,8 @@
                 </div>
 
               </div>
-            </form>
+            </form> -->
+
           </div><!-- End Contact Form -->
 
         </div>
@@ -1034,7 +1347,51 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <a href="https://wa.me/0689796584?text=Hello%2C%20I'm%20interested%20in%20your%20services." class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
 </body>
+<script>
+  document.querySelector('.php-email-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var form = this;
+    var action = form.getAttribute('action');
+    var formData = new FormData(form);
+
+    var loading = form.querySelector('.loading');
+    var errorMessage = form.querySelector('.error-message');
+    var sentMessage = form.querySelector('.sent-message');
+
+    loading.style.display = 'block';
+    errorMessage.style.display = 'none';
+    sentMessage.style.display = 'none';
+
+    fetch(action, {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        loading.style.display = 'none';
+        if (data.status === 'success') {
+            sentMessage.style.display = 'block';
+            form.reset(); // Reset the form
+        } else {
+            errorMessage.style.display = 'block';
+            errorMessage.textContent = data.message;
+        }
+    })
+    .catch(error => {
+        loading.style.display = 'none';
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = 'There was an error submitting your message.';
+    });
+});
+</script>
 
 </html>
+
+
+
+
