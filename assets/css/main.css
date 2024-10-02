@@ -862,6 +862,17 @@ section,
   opacity: 1;
   bottom: 0;
 }
+.portfolio .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+
+}
+
+.portfolio .portfolio-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-5px); /* Optional: slight lift effect on hover */
+}
 
 /*--------------------------------------------------------------
 # Services Section
